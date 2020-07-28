@@ -219,7 +219,7 @@ function passWord(){
     var pass1 = prompt('Please enter your password',' '); 
     while (testV < 3) { 
         if (!pass1)  history.go(-1); 
-        if (pass1.toLowerCase() == PASSWORD_STRING) { 
+        if (pass1 == PASSWORD_STRING) { 
             //alert('Password correct !'); 
             document.getElementById("passwordform").remove();
             start();
